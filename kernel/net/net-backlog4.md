@@ -105,6 +105,11 @@ put_and_exit:
 
 tcp_create_openreq_child()で
 SYN_RECVなソケットを作成(inet_csk_clone_lock)
+```c
+struct inet_connection_sock *newicsk = inet_csk(newsk);
+
+		newsk->sk_state = TCP_SYN_RECV;
+```
 
 acceptキューが溢れていたら
 ```
