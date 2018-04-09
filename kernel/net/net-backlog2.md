@@ -209,3 +209,4 @@ write(2, "connect to localhost port 10000 "..., 44connect to localhost port 1000
 write(2, ": ", 2: )                       = 2
 write(2, "Connection reset by peer\n", 25Connection reset by peer
 ```
+テスト
