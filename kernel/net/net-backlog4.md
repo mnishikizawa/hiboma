@@ -1,4 +1,4 @@
-# backlog について調べたことを書いていく
+# backlog について調べたことを書いていく(v4.15.7)
 
 sock.h
 ```
@@ -14,7 +14,7 @@ static inline bool sk_acceptq_is_full(const struct sock *sk)
 }
 ```
 
-tcp_v4_syn_recv_sockの中身(v4.15.7)
+tcp_v4_syn_recv_sockの中身  
 ```
 struct sock *tcp_v4_syn_recv_sock(const struct sock *sk, struct sk_buff *skb,
 				  struct request_sock *req,
