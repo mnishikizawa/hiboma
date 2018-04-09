@@ -108,17 +108,17 @@ SYN_RECVなソケットを作成(inet_csk_clone_lock)
 ```c
 struct inet_connection_sock *newicsk = inet_csk(newsk);
 
-		newsk->sk_state = TCP_SYN_RECV;
+	newsk->sk_state = TCP_SYN_RECV;
 ```
 
 acceptキューが溢れていたら
 ```
 if (sk_acceptq_is_full(sk))
-		goto exit_overflow;
+	goto exit_overflow;
 ```
 
 LINUX_MIB_LISTENOVERFLOWSカウンタをインクリメント
 ```c
 exit_overflow:
-NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
 ```
