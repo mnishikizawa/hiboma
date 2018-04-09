@@ -1,17 +1,16 @@
 # backlog について調べたことを書いていく(v4.15.7)
 
-sock.h
-```
-  *	@sk_ack_backlog: current listen backlog
-  *	@sk_max_ack_backlog: listen backlog set in listen()
-```
-
 sk_acceptq_is_full
 ```
 static inline bool sk_acceptq_is_full(const struct sock *sk)
 {
 	return sk->sk_ack_backlog > sk->sk_max_ack_backlog;
 }
+```
+sock.h
+```
+  *	@sk_ack_backlog: current listen backlog
+  *	@sk_max_ack_backlog: listen backlog set in listen()
 ```
 
 tcp_v4_syn_recv_sockの中身  
