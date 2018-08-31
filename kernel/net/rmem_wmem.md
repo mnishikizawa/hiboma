@@ -24,3 +24,4 @@ typedef uint16_t u16;
 
 ### TCP Window scale
 - 3 Wayハンドシェイク時に決定される、TCP Optionで確認できる。これに関係ありそうなSACKもこの時に決定。
+- ssの出力結果からも確認可能
