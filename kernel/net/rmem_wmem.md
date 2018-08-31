@@ -23,5 +23,5 @@ typedef uint16_t u16;
 - TCP Window Scaleオプションが有効だった場合、net.ipv4.tcp_rmem, net.core.rmem_max,広告ウインドウサイズを比較してWindow scaleの値を決める。最大値は14でサイズは512Mb
 
 ### TCP Window scale
-- 3 Wayハンドシェイク時に決定される、TCP Optionで確認できる。これに関係ありそうなSACKもこの時に決定。
+- 3 Wayハンドシェイク時に決定され、TCP Optionで確認できる。これに関係ありそうなSACKのサポートもこの時に決定。
 - ssの出力結果からも確認可能
