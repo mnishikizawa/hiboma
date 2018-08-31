@@ -18,3 +18,6 @@ typedef uint16_t u16;
 			(*rcv_wscale)++;
 		}
 	}
+```
+
+- TCP Window Scaleオプションが有効だった場合、net.ipv4.tcp_rmem, net.core.rmem_max,広告ウインドウサイズを比較してWindow scaleの値を決める。最大値は14
