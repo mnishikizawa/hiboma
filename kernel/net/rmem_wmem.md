@@ -1,4 +1,4 @@
-## rmemについて
+## rmemについて (v4.15.7)
 
 - net/ipv4/tcp_output.cのtcp_select_initial_window()
 
