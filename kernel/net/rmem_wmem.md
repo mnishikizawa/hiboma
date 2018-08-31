@@ -3,6 +3,10 @@
 - net/ipv4/tcp_output.cのtcp_select_initial_window()
 
 ```
+#define U16_MAX		((u16)~0U)
+#define TCP_MAX_WSCALE		14U
+typedef uint16_t u16;
+
 (*rcv_wscale) = 0;
 	if (wscale_ok) {
 		/* Set window scaling on max possible window */
