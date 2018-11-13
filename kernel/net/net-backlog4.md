@@ -129,7 +129,7 @@ exit_overflow:
 ```
 
 tcp_create_openreq_child()で
-SYN_RECVなソケットを作成(inet_csk_clone_lock)
+SYN_RECVなソケットを作成(inet_csk_clone_sock)
 ```c
 struct inet_connection_sock *newicsk = inet_csk(newsk);
 
